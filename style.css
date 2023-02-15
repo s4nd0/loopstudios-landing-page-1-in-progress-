@@ -1,0 +1,293 @@
+:root
+{
+    --dark-gray: hsl(0, 0%, 55%);
+    --very-dark-gray: hsl(0, 0%, 41%);
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body 
+{
+    font-size: 15px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: flex-start;
+}
+main
+{
+    width: 100%;
+    max-width: 1440px;                                           
+}
+.header
+{
+    
+
+    padding: 2.5rem 1.5rem;
+
+    background-image: url(./images/mobile/image-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.header-first-line
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-second-line
+{
+    padding: 10rem 0;
+}
+.logo 
+{
+    width: 45%;
+}
+.mobile-menu
+{
+    background-image: url(./images/icon-hamburger.svg);
+    width: 30px;
+    height: 20px;
+    background-size: cover;
+}
+.header-box
+{
+    padding: 2rem 1.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.801);
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.801);
+
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans';
+
+    overflow: hidden;
+}
+
+.feature
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 5rem 1.5rem;
+    box-sizing: border-box;
+}
+.feature-img-mobile
+{
+    width: 100%;
+}
+.feature-img-desktop
+{
+    display: none;
+}
+.feature-content
+{
+    padding-top: 3rem;
+    text-align: center;
+}
+.feature-content h1 
+{
+    font-family: 'Josefin Sans';
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.feature-content p
+{
+    color: var(--dark-gray);
+    font-family: 'Alata';
+}
+.creations-header
+{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.creations-header h2
+{
+    font-family: 'Josefin Sans';
+    text-transform: uppercase;
+}
+.creations
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem;
+
+    padding: 0 1.5rem;
+    margin-bottom: 2rem;
+}
+.item
+{
+    display: block;
+    box-sizing: border-box;
+    padding: 4rem 0 1rem 1rem;
+    background-size: cover;
+    text-decoration: none;
+    transition: 0.1s ease-in-out;
+}
+.item:hover
+{
+    opacity: 50%;
+}
+#deep-earth
+{
+    background-image: url(./images/mobile/image-deep-earth.jpg);
+}
+#night-arcade
+{
+    background-image: url(./images/mobile/image-night-arcade.jpg);
+}
+#soccer-team
+{
+    background-image: url(./images/mobile/image-soccer-team.jpg);
+}
+#the-grid
+{
+    background-image: url(./images/mobile/image-grid.jpg);
+}
+#from-up
+{
+    background-image: url(./images/mobile/image-from-above.jpg);
+}
+#pocket-borealis
+{
+    background-image: url(./images/mobile/image-pocket-borealis.jpg);
+}
+#the-curiosity
+{
+    background-image: url(./images/mobile/image-curiosity.jpg);
+}
+#make-it
+{
+    background-image: url(./images/mobile/image-fisheye.jpg);
+}
+.item-text
+{
+    color: white;
+    font-family: 'Josefin Sans';
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    width: 40%;
+    position: relative;
+}
+.creations-button-line
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 6rem;
+}
+.creations-button-line button
+{
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: .5rem 2.5rem;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Alata';
+    font-size: 1rem;
+    letter-spacing: 3px;
+    background-color: white;
+    transition: 0.1s ease-in-out;
+}
+.creations-button-line button:hover
+{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.footer
+{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 4rem 0;
+    box-sizing: border-box;
+}
+.footer .column1
+{
+    box-sizing: border-box;
+    margin-bottom: 2.5rem;
+}
+.footer .column1 img 
+{
+    width: 40%;
+    margin-bottom: 1rem;
+}
+.footer ul 
+{
+    list-style-type: none;
+    box-sizing: border-box;
+}
+.footer ul li 
+{
+    box-sizing: border-box;
+}
+.footer .column1 a 
+{
+    text-decoration: none;
+    color: white;
+    font-family: 'Alata';
+    display: block;
+    padding: .5rem 0;
+    margin: .5rem 0;
+    box-sizing: border-box;
+}
+.footer .column1 a:hover
+{
+    text-decoration: underline;
+    
+}
+
+.socials
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer .column2 a 
+{
+    text-decoration: none;
+    color: white;
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: .5rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom: .5rem;
+}
+.footer .column2 a:hover
+{
+    border-bottom: 2px solid white;
+}
+
+.footer .column2 p 
+{
+    color: var(--dark-gray);
+    font-family: 'Alata';
+}
+#facebook
+{
+    background-image: url(./images/icon-facebook.svg);
+}
+#twitter
+{
+    background-image: url(./images/icon-twitter.svg);
+}
+#pinterest
+{
+    background-image: url(./images/icon-pinterest.svg);
+}
+#instagram
+{
+    background-image: url(./images/icon-instagram.svg);
+}
